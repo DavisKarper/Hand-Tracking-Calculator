@@ -33,9 +33,9 @@ function createNeuralNetwork() {
     nn = ml5.neuralNetwork({ task: 'classification', debug: true })
 
     const options = {
-        model: "../model/model.json",
-        metadata: "../model/model_meta.json",
-        weights: "../model/model.weights.bin"
+        model: "./model/model.json",
+        metadata: "./model/model_meta.json",
+        weights: "./model/model.weights.bin"
     }
     console.log(options)
     nn.load(options, finishedTraining)
